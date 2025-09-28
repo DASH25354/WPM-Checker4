@@ -127,13 +127,12 @@
 
 <!-- テキスト -->
 <div id="text">
-【1】Gemini Robotics 1.5 is a new AI model. It helps robots see, think, and act in the real world. Robots with Gemini Robotics 1.5 can do many jobs. They can work with people, use tools, and solve problems. They do not need to be trained for every job; they can learn and try new things. This model is safe, smart, and works well. It is easy for developers to use. Gemini Robotics 1.5 helps robots finish tasks step by step. It is good for schools, homes, and factories. Now, robots can help people more. They can understand and move around. Gemini Robotics 1.5 makes robots helpful in our life.
-</div>
+【4】Kazlaser is a comedian from the group Maple Chogokin. Fumi Nikaido is an actress. On August 10, 2025, they said they got married. Kazlaser is 41 years old and Fumi Nikaido is 30 years old. They first met in 2017 on a TV show together. At that time, Fumi Nikaido said she was a big fan of Kazlaser and liked his face. People online are talking a lot about their meeting. After about eight years, they shared their happy news on Kazlaser’s X (Twitter) account. Kazlaser wrote that they got married and thanked everyone. He also said that both of them are very unique and sometimes they may have problems, but they want to have a happy family and always smile together. Many people are happy for them and wish them a happy life.</div>
 
 <!-- 音声再生（英文の下、ボタンの上） -->
 <div class="audio-wrapper">
   <audio controls>
-    <source src="85. Gemini 1.5.mp3" type="audio/mpeg">
+    <source src="4.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 </div>
@@ -146,11 +145,11 @@
 <div id="questions">
   <h3>Quiz</h3>
   <label>Select all options below that match the content of the passage.</label></span>
-  <span class="question-option"><input type="checkbox" class="q1" value="a"> It helps robots work with people.</span>
-  <span class="question-option"><input type="checkbox" class="q1" value="b"> Robots using Gemini Robotics 1.5 need training for every job.</span>
-  <span class="question-option"><input type="checkbox" class="q1" value="c"> Robots can move and act in the real world with Gemini Robotics 1.5.</span>
-  <span class="question-option"><input type="checkbox" class="q1" value="d"> Gemini Robotics 1.5 is not safe for school.</span>
-</div>
+  <span class="question-option"><input type="checkbox" class="q1" value="a"> Kazlaser and Fumi Nikaido met for the first time in 2025.</span>
+  <span class="question-option"><input type="checkbox" class="q1" value="b"> Kazlaser and Fumi Nikaido got married in August 2025.</span>
+  <span class="question-option"><input type="checkbox" class="q1" value="c"> Fumi Nikaido said she was a big fan of Kazlaser.
+</span>
+  <span class="question-option"><input type="checkbox" class="q1" value="d"> Kazlaser and Fumi Nikaido have never worked together on TV.</div>
 
 <div id="result"></div>
 
@@ -169,7 +168,7 @@ function finishReading() {
   if (!startTime) return alert("Please start reading first!");
   const elapsedSec = (Date.now() - startTime) / 1000;
 
-  const correctAnswers = ["a","c"];
+  const correctAnswers = ["b","c"];
   const checked = Array.from(document.querySelectorAll(".q1:checked")).map(el => el.value);
   const numCorrect = checked.filter(val => correctAnswers.includes(val)).length;
   const accuracy = numCorrect / correctAnswers.length;
@@ -187,3 +186,4 @@ function finishReading() {
 
 </body>
 </html>
+
